@@ -1,8 +1,9 @@
-const express=require('express');
-const aiController=require("../controllers/ai.controller")
-const router=express.Router();
+// ai.routes.js
+import express from "express";
+import { getReview } from "../controllers/ai.controller.js"; // note .js extension
 
-router.post("/get-review", aiController.getReview)
-    //konsa controller hoga sirf vahi aayega, controller content present in controller file... 
-    
-module.exports= router;
+const router = express.Router();
+
+router.post("/get-review", getReview);
+
+export default router;
