@@ -8,7 +8,7 @@ const app = express();
 
 // ✅ CORS: allow only your Vercel frontend
 app.use(cors({
-  origin: ["https://code-reviewer-eight.vercel.app"], // replace with your Vercel frontend URL
+  origin: ["https://review-frontend-sand.vercel.app/"], // replace with your Vercel frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
