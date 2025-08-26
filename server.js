@@ -5,7 +5,7 @@
     //console.log('server is running on http://localhost:3000')
 //});
 
-
+import 'dotenv/config';
 import express from "express";
 import cors from "cors";
 
