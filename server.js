@@ -19,6 +19,10 @@ app.use(express.json());
 // ✅ API routes
 app.use("/api", aiRouter);
 
+app.get("/", (req, res) => {
+  res.send("✅ Backend is running!");
+});
+
 // ✅ Keep server alive on Render
 const PORT = process.env.PORT || 5000; 
 app.listen(PORT, () => {
